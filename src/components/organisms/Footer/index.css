@@ -1,0 +1,17 @@
+.footerWrapper {
+    display: table-row;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    background-image: url("../../../img/content_bg2.png");
+    background-repeat: repeat-y;
+    background-position: center center;
+}
+
+.footer {
+    border-top: 3px solid #d3361b;
+    width: 980px;
+    margin: auto;
+    height: 90px;
+    background-image: url("../../../img/footer_bg2.png");
+}

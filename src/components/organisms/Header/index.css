@@ -1,0 +1,57 @@
+.headerWrapper {
+    width: 100%;
+    margin: auto;
+    background: white;
+    background-image: url("../../../img/content_bg2.png");
+    background-repeat: repeat-y;
+    background-position: center center;
+}
+
+.header {
+    width: 980px;
+    margin: auto;
+    height: 100px;
+    border-bottom: 5px solid #d3361b;
+
+}
+
+.links {
+    height: 60px;
+}
+
+.links .logo {
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.links .moto {
+    float: left;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.top_login {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.navigation {
+    float: right;
+    margin-top: 15px;
+}
+
+.navigation .linkToPage {
+    margin-right: 2rem;
+}
+
+.headerBox {
+    width: 980px;
+    height: 30px;
+    margin: auto;
+    background: #555555;
+
+}
+
+

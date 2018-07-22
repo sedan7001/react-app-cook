@@ -1,0 +1,269 @@
+/* write_form css */
+
+.write_form_title {
+    margin-top: 20px;
+    width: 99%;
+    height: 20px;
+    text-align: center;
+    padding-top: 7px;
+    border-top: solid 2px #aaaaaa;
+    background-color: #eeeeee;
+}
+
+.write_form {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.write_form .write_row1 {
+    width: 99%;
+    height: 25px;
+    margin: 2px 0 2px 0;
+}
+
+.write_form .write_row2 {
+    width: 99%;
+    height: 25px;
+    margin: 2px 0 2px 0;
+}
+
+.write_form .write_row3 {
+    width: 99%;
+    height: 251px;
+    margin: 2px 0 2px 0;
+}
+
+.write_form .write_row4 {
+    width: 99%;
+    height: 25px;
+    margin: 2px 0 2px 0;
+}
+
+.write_form .write_row5 {
+    width: 99%;
+    height: 25px;
+    margin: 2px 0 2px 0;
+}
+
+.write_form .write_row6 {
+    width: 99%;
+    height: 25px;
+    margin: 2px 0 2px 0;
+}
+
+.write_line {
+    width: 99%;
+    border-bottom: solid 1px #cccccc;
+}
+
+.write_form .col1 {
+    float: left;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    background-color: #eeeeee;
+}
+
+.write_form .write_row3 .col1 {
+    height: 126px;
+    padding-top: 120px;
+}
+
+.write_form .col2 {
+    float: left;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.write_row1 .col2 {
+    margin-top: 6px;
+}
+
+.write_form .write_row1 .col3 {
+    float: left;
+    margin-top: 4px;
+    margin-left: 100px;
+}
+
+.write_row2 .col2 input {
+    width: 650px;
+    height: 17px;
+    border: solid 1px #cccccc;
+}
+
+.write_row3 .col2 textarea {
+    margin-top: 1px;
+    border: solid 1px #cccccc;
+}
+
+.write_row4 .col2 input {
+    width: 300px;
+    height: 19px;
+    border: solid 1px #cccccc;
+}
+
+.write_row5 .col2 input {
+    width: 300px;
+    height: 19px;
+    border: solid 1px #cccccc;
+}
+
+.write_row6 .col2 input {
+    width: 300px;
+    height: 19px;
+    border: solid 1px #cccccc;
+}
+
+.write_button {
+    margin-top: 15px;
+    width: 97%;
+    text-align: right;
+}
+
+.delete_ok {
+    margin: 0 0 3px 140px;
+}
+
+/* ripple css */
+
+.ripple {
+    width: 98%;
+
+}
+
+.ripple_writer_title {
+    height: 26px;
+    padding-top: 10px;
+}
+
+.ripple_writer_title ul {
+    margin-left: 5px;
+}
+
+.ripple_writer_title li {
+    display: inline;
+}
+
+#writer_title1 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#writer_title2 {
+    margin-left: 20px;
+}
+
+#writer_title3 {
+    margin-left: 540px;
+}
+
+.ripple_content {
+    padding: 10px;
+    margin-left: 5px;
+    line-height: 150%;
+}
+
+.hor_line_ripple {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #efefef;
+}
+
+.ripple_box {
+    width: 99%;
+    height: 100px;
+    padding: 8px;
+    margin-left: 3px;
+    margin-bottom: 15px;
+    background-color: #efefef;
+}
+
+.ripple_box1 {
+    float: left;
+    margin: 5px;
+}
+
+.ripple_box2 {
+    float: left;
+    margin: 5px;
+}
+
+.ripple_box2 textarea {
+    width: 550px;
+    border: solid 1px #cccccc;
+}
+
+.ripple_box3 {
+    float: left;
+    margin: 5px 0 0 10px;
+}
+
+/* view.php css */
+
+.viewComment {
+    margin: 10px 0 0 10px;
+}
+
+.viewTitle {
+    height: 18px;
+    padding: 10px 8px 8px 8px;
+    border-top: solid 2px #aaaaaa;
+    background-color: #eeeeee;
+    margin-bottom: 5px;
+}
+
+.viewSubject {
+    float: left;
+    width: 70%;
+}
+
+.viewCount {
+    float: left;
+    width: 28%;
+    text-align: right;
+}
+
+.viewContent {
+    width: 98%;
+    min-height: 200px;
+    padding: 15px 0 15px 8px;
+    overflow: hidden;
+    line-height: 150%;
+    border-bottom: solid 1px #cccccc;
+    margin-bottom: 15px;
+}
+
+.viewButton {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.viewButton .smallButton {
+    width: 51px;
+    height: 25px;
+    background: #a1a1a1;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.viewButton .smallButton a {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.viewButton .writeButton {
+    float: right;
+    text-align: center;
+    width: 71px;
+    height: 26px;
+    background: #555555;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.viewButton .writeButton a {
+    font-size: 1.1rem;
+    color: #fff;
+}
