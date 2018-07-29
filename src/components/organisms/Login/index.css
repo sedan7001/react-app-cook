@@ -1,0 +1,95 @@
+/* login */
+
+/*color: #868587;*/
+/*height: 30px;*/
+/*padding-left: 5px;*/
+/*border-bottom: solid 1px #cccccc;*/
+
+.loginForm {
+    margin-left: 15px;
+    /*width: 100%;*/
+    height: 300px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.loginMessage {
+    font-size: 1.57em;
+    font-weight: bold;
+    color: #845e51;
+}
+
+.loginImageArea {
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.loginMainArea {
+    float: left;
+    width: 450px;
+    height: 150px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.loginLabel {
+    float: left;
+    width: 80px;
+    height: 50px;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: gray;
+
+}
+
+.loginInputWithLabel {
+    overflow: hidden;
+}
+
+.loginMainArea .loginLabel ul {
+    margin-top: 7px;
+}
+
+.loginMainArea .loginLabel li {
+    padding-bottom: 11px;
+}
+
+.loginMainArea .loginInput {
+    float: left;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.loginMainArea .loginInput li {
+    padding-bottom: 7px;
+}
+
+.loginMainArea .loginInput input.login_input {
+    width: 150px;
+    height: 18px;
+    border: solid 1px #cccccc;
+}
+
+.loginMainArea .login_button {
+    float: left;
+    margin-left: 10px;
+}
+
+.loginMainArea .loginLine {
+    width: 382px;
+    height: 1px;
+    margin-top: 20px;
+    border-bottom: solid 1px #dddddd;
+}
+
+.loginMainArea .loginGotoJoin {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.loginGotoJoin span {
+    margin-right: 20px;
+    color: #aaaaaa;
+    font-size: 13px;
+}

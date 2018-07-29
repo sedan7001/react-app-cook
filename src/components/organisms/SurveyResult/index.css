@@ -1,0 +1,11 @@
+.surveyResultBackBtn > * {
+    width: 60px;
+    height: 20px;
+    background: #4d4d4da3;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.surveyResultBackBtn a {
+    color: #fff;
+}

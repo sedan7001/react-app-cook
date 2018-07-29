@@ -4,8 +4,7 @@ import './index.css';
 const Footer = () => {
     return (
         <div className="footerWrapper">
-            <div className="footer">
-            </div>
+            <p className="copyright">Copyright 2018. HAPPYKITCHEN. All right reserved.</p>
         </div>
     );
 };

@@ -1,0 +1,136 @@
+.memoWriteWrapper {
+    height: 155px;
+}
+
+.memoWriteTextArea {
+    float: left;
+    width: 650px;
+}
+
+.memoWriteSubmitBtn {
+    float: left;
+    /*margin-top: 5px;*/
+    margin-left: 15px;
+}
+
+.memoWriteUser {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.memoWriteTextArea textarea {
+    width: 650px;
+    height: 88px;
+    border: solid 1px #cccccc;
+}
+
+.memoContainer {
+    margin-top: 10px;
+}
+
+.memoTitle {
+    height: 26px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-top: solid 1px #cccccc;
+    border-bottom: dotted 1px #cccccc;
+}
+
+.memoTitle ul {
+    margin-left: 5px;
+}
+
+.memoTitle li {
+    display: inline;
+}
+
+.memoWriter {
+    margin-left: 10px;
+}
+
+.memoDate {
+    margin-left: 20px;
+}
+
+.memoDelBtn {
+    margin-left: 540px;
+}
+
+.memoContent {
+    margin-left: 20px;
+}
+
+.memoRippleMainArea {
+    margin-top: 20px;
+
+    overflow: hidden;
+}
+
+.memoRippleGroupArea {
+    float: left;
+    font-weight: bold;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.memoRippleWrapper {
+    overflow: auto;
+}
+
+.memoRippleMainArea {
+    float: left;
+    padding: 10px;
+    width: 92%;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #eeeeee;
+}
+
+.memoRippleTitle {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.memoRippleTitle li {
+    display: inline;
+}
+
+.memoRippleTitle li.memoRippleDelBtn {
+    padding-left: 20px;
+}
+
+.memoRippleContent {
+    /*padding-top: 10px;*/
+    padding-left: 10px;
+    /*padding-bottom: 10px;*/
+    border-bottom: dotted 1px #cccccc;
+}
+
+.memoRippleForm {
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.rippleFormContent {
+    float: left;
+    width: 600px;
+}
+
+.rippleFormContent textarea {
+    border: solid 1px #cccccc;
+    width: 600px;
+    height: 40px;
+}
+
+.rippleSubmitBtn {
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.memoPageNumber {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}

@@ -1,5 +1,13 @@
 /* list css */
 
+.postListWrapper {
+    /*border-left: solid 1px #dddddd;*/
+    width: 809px;
+    /*padding-left: 5px;*/
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
+
+}
 .listTopSearch {
     height: 30px;
     padding-top: 10px;
@@ -7,7 +15,7 @@
 
 .listTopSearch .listSearchCount {
     float: left;
-    width: 500px;
+    width: 470px;
     margin-top: 2px;
 }
 
@@ -126,7 +134,7 @@
 
 }
 
-.listPagination .writeButton {
+.listPagination .postWriteBtn {
     float: right;
     text-align: center;
     width: 71px;
@@ -136,7 +144,7 @@
     margin-right: 10px;
 }
 
-.listPagination .writeButton a {
+.listPagination .postWriteBtn a {
     font-size: 1.1rem;
     color: #fff;
 }

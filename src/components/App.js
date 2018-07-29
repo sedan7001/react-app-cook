@@ -1,32 +1,38 @@
 import React, {Component} from 'react';
 import './App.css';
-import HeaderContainer from "containers/HeaderContainer/HeaderContainer";
-import FooterContainer from "containers/FooterContainer/FooterContainer";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from "./pages/Home";
-import About from "./pages/About";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
-
+import GreetPage from "./pages/GreetPage";
+import FreePage from "./pages/FreePage";
+import DownloadPage from "./pages/DownloadPage";
+import QnaPage from "./pages/QnaPage";
+import MemoPage from "./pages/MemoPage";
+import SurveyPage from "./pages/SurveyPage";
+import AuthPage from "./pages/AuthPage";
+import AdminPage from "./pages/AdminPage";
 class App extends Component {
     render() {
         return (
             <Router>
                 <div className="App">
-                    <HeaderContainer/>
-                    <div className="contentWrapper">
-                        <Switch>
-                            <Route exact path="/" component={Home}/>
-                            <Route path="/home" component={Home}/>
-                            <Route path="/about" component={About}/>
-                            {/*<Route path="/posts" component={Posts}/>*/}
-                            {/*<Route path="/login" component={Login}/>*/}
-                            {/*<Route path="/me" component={MyPage}/>*/}
-                            {/*<Route path="/search" component={Search}/>*/}
-                            <Route component={NotFoundPage}/>
-                        </Switch>
-                    </div>
+                    <Switch>
+                        <Route exact path="/" component={HomePage}/>
+                        <Route path="/home" component={HomePage}/>
+                        <Route path="/about" component={AboutPage}/>
+                        <Route path="/greet" component={GreetPage}/>
+                        <Route path="/memo" component={MemoPage}/>
+                        <Route path="/free" component={FreePage}/>
+                        <Route path="/download" component={DownloadPage}/>
+                        <Route path="/survey" component={SurveyPage}/>
+                        <Route path="/qna" component={QnaPage}/>
+                        <Route path="/auth" component={AuthPage}/>
+                        <Route path="/admin" component={AdminPage}/>
 
-                    <FooterContainer/>
+
+                        <Route component={NotFoundPage}/>
+                    </Switch>
                 </div>
             </Router>
         );
