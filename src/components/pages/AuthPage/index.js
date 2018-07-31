@@ -4,7 +4,6 @@ import Header from "../../organisms/Header";
 import Footer from "../../organisms/Footer";
 import PageTemplate from "../../templates/PageTemplates";
 import {Route, Switch} from 'react-router-dom'
-import Heading from "../../atoms/Heading";
 import Login from "../../organisms/Login";
 import Register from "../../organisms/Register";
 

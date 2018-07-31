@@ -2,7 +2,6 @@ import React from 'react';
 import './index.css';
 import titleComment from 'assets/img/title_comment.gif';
 import commentSubmitBtn from 'assets/img/ok_ripple.gif';
-// import { Link } from 'react-router-dom'
 import Button from "../../atoms/Button";
 import styled from 'styled-components'
 

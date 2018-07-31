@@ -71,8 +71,8 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">21</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=96&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
+
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-07-11</div>
@@ -80,8 +80,8 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">20</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=95&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
+
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-07-11</div>
@@ -89,8 +89,8 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">19</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=94&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
+
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-07-03</div>
@@ -98,8 +98,7 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">18</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=92&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-06-27</div>
@@ -107,8 +106,7 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">17</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=91&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-06-27</div>
@@ -116,8 +114,7 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">16</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=90&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-06-27</div>
@@ -125,8 +122,7 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">15</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=89&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-06-27</div>
@@ -134,8 +130,7 @@ const PostList = ({match}) => {
                 </div>
                 <div className="listItem">
                     <div className="listNumber">14</div>
-                    <div className="listSubject"><a
-                        href="view.php?table=cook_about&amp;num=88&amp;item_subject1=테스트&amp;page=1">테스트</a>
+                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
                     </div>
                     <div className="listName">세단</div>
                     <div className="listDay">2018-06-27</div>
@@ -144,8 +139,8 @@ const PostList = ({match}) => {
 
                 <div className="listPagination">
                     <div className="listPageNumber"> ◀ 이전 &nbsp;&nbsp;&nbsp;&nbsp;
-                        <b> 1 </b><a href="list.php?table=cook_about&amp;page=2"> 2 </a><a
-                            href="list.php?table=cook_about&amp;page=3"> 3 </a>            &nbsp;&nbsp;&nbsp;&nbsp;다음
+                        <b> 1 </b><a> 2 </a><a
+                        > 3 </a>            &nbsp;&nbsp;&nbsp;&nbsp;다음
                         ▶
                     </div>
                     <Button to={`${match.url}/write`} theme="dark" width='71px' height='26px'>글쓰기

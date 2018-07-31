@@ -12,7 +12,7 @@ const Header = () => {
                     <NavLink className="logo" to="/home"><img src={logo} border="0" alt="기본"/></NavLink>
                     <NavLink className="moto" to="/home"> <img src={moto} border="0" alt="moto"/></NavLink>
                     <div className="top_login">
-                        <NavLink to='/admin'>관리자페이지 | </NavLink>
+                        <NavLink to='/admin/dashboard'>관리자페이지 | </NavLink>
                         <NavLink to='/auth/login'>로그인 | </NavLink>
                         <NavLink to='/auth/register'>회원가입</NavLink>
                     </div>

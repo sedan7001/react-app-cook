@@ -28,8 +28,8 @@ const SurveyResult = ({match}) => {
                 <tr>
                     <td height="20" bgcolor="#ffffff"></td>
                     <td></td>
-                    <td> (<b>0</b> %)
-                        명
+                    <td> (<b>10</b> %)
+                        20명
                     </td>
                     <td></td>
                     <td bgcolor="#ffffff"></td>
@@ -42,7 +42,7 @@ const SurveyResult = ({match}) => {
                             <tbody>
                             <tr>
 
-                                <td width="0%" bgcolor="purple"></td>
+                                <td width="10%" bgcolor="purple"></td>
                                 <td width="100%" bgcolor="#dddddd" height="5"></td>
                             </tr>
                             </tbody>
@@ -54,8 +54,8 @@ const SurveyResult = ({match}) => {
                 <tr>
                     <td height="20" bgcolor="#ffffff"></td>
                     <td></td>
-                    <td> (<b>0</b> %)
-                        명
+                    <td> (<b>25</b> %)
+                        50명
                     </td>
                     <td></td>
                     <td bgcolor="#ffffff"></td>
@@ -68,7 +68,7 @@ const SurveyResult = ({match}) => {
                             <tbody>
                             <tr>
 
-                                <td width="0%" bgcolor="blue"></td>
+                                <td width="25%" bgcolor="blue"></td>
                                 <td width="100%" bgcolor="#dddddd" height="5"></td>
                             </tr>
                             </tbody>
@@ -80,8 +80,8 @@ const SurveyResult = ({match}) => {
                 <tr>
                     <td height="20" bgcolor="#ffffff"></td>
                     <td></td>
-                    <td> (<b>0</b> %)
-                        명
+                    <td> (<b>5</b> %)
+                        10명
                     </td>
                     <td></td>
                     <td bgcolor="#ffffff"></td>
@@ -94,7 +94,7 @@ const SurveyResult = ({match}) => {
                             <tbody>
                             <tr>
 
-                                <td width="0%" bgcolor="green"></td>
+                                <td width="5%" bgcolor="green"></td>
                                 <td width="100%" bgcolor="#dddddd" height="5"></td>
                             </tr>
                             </tbody>
@@ -107,8 +107,8 @@ const SurveyResult = ({match}) => {
                 <tr>
                     <td height="20" bgcolor="#ffffff"></td>
                     <td></td>
-                    <td> (<b>0</b> %)
-                        명
+                    <td> (<b>60</b> %)
+                        120명
                     </td>
                     <td></td>
                     <td bgcolor="#ffffff"></td>
@@ -121,7 +121,7 @@ const SurveyResult = ({match}) => {
                             <tbody>
                             <tr>
 
-                                <td width="0%" bgcolor="skyblue"></td>
+                                <td width="60%" bgcolor="skyblue"></td>
                                 <td width="100%" bgcolor="#dddddd" height="5"></td>
                             </tr>
                             </tbody>

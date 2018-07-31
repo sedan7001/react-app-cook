@@ -46,7 +46,7 @@ const SurveyForm = ({match}) => {
                 </tr>
                 <tr>
                     <td className="surveyFormSubmit">
-                        <Button type="submit" width={"62px"} height={"20px"} theme="dark">투표하기</Button>
+                        <Button disabled type="submit" width={"62px"} height={"20px"} theme="dark">투표하기</Button>
                         <Button to={`${match.url}/result`} width={"62px"} height={"20px"}>결과보기</Button>
                     </td>
                 </tr>

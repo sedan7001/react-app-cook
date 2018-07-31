@@ -1,13 +1,29 @@
-.adminDashBoardWrapper {
+.adminServerInfoWrapper {
     position: relative;
     border-radius: 3px;
     background: #ffffff;
     /*border-top: 3px solid #d2d6de;*/
     width: 868px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: auto;
     overflow: auto;
+}
+
+.goAdminBtnWrapper {
+    margin: auto;
+    width: 868px;
+    border-bottom: 1px solid #d2d6de;
+
+}
+
+.goAdminBtn {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.adminServerInfoWrapper table {
+    text-align: center;
 
 }
 
@@ -37,23 +53,24 @@
     text-align: center;
 }
 
-.postChartWrapper {
+.usageChartWrapper {
     float: left;
-    width: 500px;
-    height: 500px;
+    /*width: 500px;*/
+    /*height: 500px;*/
+    width: 100%;
     border: solid #eee 1px;
-    padding-left: 5px;
+    /*padding-left: 5px;*/
     margin: auto;
     margin-bottom: 20px;
 }
 
-.chartTitle {
+.usagechartTitle {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
-.chartLabel {
+.usagechartLabel {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +78,6 @@
     font-size: 11px;
     padding: 3px 10px;
     background-color: #337ab7;
-    border-radius: .24em;
 }
 
 .dashboardNavigation {
@@ -123,10 +139,6 @@
     width: 100%;
     margin-bottom: 1rem;
     background-color: transparent
-}
-
-.table th {
-    font-weight: bold;
 }
 
 .table td, .table th {
