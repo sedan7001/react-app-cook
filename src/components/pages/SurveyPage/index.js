@@ -1,19 +1,21 @@
 import React from 'react'
 import PageTemplate from "../../templates/PageTemplates";
-import Header from "../../organisms/Header";
 import Footer from "../../organisms/Footer";
-import SurveyForm from "../../organisms/SurveyForm";
+// import SurveyForm from "../../organisms/SurveyForm";
 import Sidebar from "../../organisms/Sidebar";
 import Heading from "../../atoms/Heading";
-import {Route} from 'react-router-dom'
-import SurveyResult from "../../organisms/SurveyResult";
+import {Route ,Switch} from 'react-router-dom'
+import HeaderContainer from "../../../containers/Base/HeaderContainer";
+import SurveyContainer from "../../../containers/SurveyContainer";
 
 const SurveyPage = ({match, ...props}) => {
     return (
-        <PageTemplate header={<Header/>} title={<Heading>{props.name}</Heading>} sidebar={<Sidebar/>}
+        <PageTemplate header={<HeaderContainer/>} title={<Heading>{props.name}</Heading>} sidebar={<Sidebar/>}
                       footer={<Footer/>}>
-            <Route exact path={match.url} component={SurveyForm}/>
-            <Route path={`${match.url}/:id`} component={SurveyResult}/>
+            <Switch>
+            <Route exact path={match.url} component={SurveyContainer}/>
+            <Route path={`${match.url}/result`} component={SurveyContainer}/>
+            </Switch>
         </PageTemplate>
     );
 };

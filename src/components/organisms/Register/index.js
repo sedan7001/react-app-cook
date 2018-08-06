@@ -43,7 +43,7 @@ const Register = () => {
                                 <div className="registerExplanation">4~12자의 영문 소문자, 숫자와 특수기호(_) 만 사용할 수 있습니다.</div>
                             </li>
                             <li><input type="password" name="password"/></li>
-                            <li><input type="password" name="pass_confirm"/></li>
+                            <li><input type="password" name="passwordConfirm"/></li>
                             <li><input type="text" name="name"/></li>
                             <li>
                                 <div className="registerNick"><input type="text" name="nick"/></div>
@@ -64,8 +64,8 @@ const Register = () => {
                                 <input type="text" className="hp" name="hp3"/>
                             </li>
                             <li>
-                                <input type="text" className="email1" name="email1"/> @
-                                <input type="text" name="email2"/>
+                                <input type="text" className="email" name="email"/>
+                                {/*<input type="text" name="email2"/>*/}
                             </li>
                         </ul>
                     </div>

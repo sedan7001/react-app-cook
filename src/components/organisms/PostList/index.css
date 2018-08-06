@@ -6,6 +6,8 @@
     /*padding-left: 5px;*/
     /*padding-top: 50px;*/
     /*padding-bottom: 50px;*/
+    overflow: hidden;
+    min-height: 475px;
 
 }
 .listTopSearch {
@@ -147,4 +149,7 @@
 .listPagination .postWriteBtn a {
     font-size: 1.1rem;
     color: #fff;
+}
+.activePageList{
+    font-weight: bold;
 }

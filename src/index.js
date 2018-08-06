@@ -1,19 +1,30 @@
+import 'react-hot-loader/patch'
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
+import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import configureStore from "./store/configureStore";
+import App from 'components/App'
+import { basename } from 'config'
+
 
 const store = configureStore();
-
 const renderApp = () => (
     <Provider store={store}>
-        <BrowserRouter >
-            <Route path="/" component={App}/>
+        <BrowserRouter basename={basename}>
+            <App />
         </BrowserRouter>
     </Provider>
 );
 
-const root = document.getElementById('root');
-ReactDOM.render(renderApp(), root);
+const root = document.getElementById('app');
+render(renderApp(), root);
+
+
+if (module.hot) {
+    module.hot.accept('components/App', () => {
+        require('components/App');
+        render(renderApp(), root)
+    })
+}
+
