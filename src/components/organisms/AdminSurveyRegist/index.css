@@ -1,0 +1,154 @@
+.adminSurveyRegistWrapper {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    /*border-top: 3px solid #d2d6de;*/
+    width: 868px;
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);*/
+    margin: auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.adminSurveyRegistContainer {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.form-signin-heading {
+    margin-bottom: 20px;
+}
+
+.surveyRegistInputWrapper {
+    float: left;
+    width: 370px;
+    height: 360px;
+    margin: 21px;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+
+}
+
+.form-signin {
+
+    /*max-width: 350px;*/
+    width: 250px;
+    height: 360px;
+    padding: 20px;
+    margin: 0 auto;
+    /*background-color: #eee;*/
+    /*float:left;*/
+}
+
+.surveyRegistChartWrapper {
+    float: left;
+    width: 370px;
+    height: 360px;
+    margin: 21px;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    /*height: calc(2.25rem + 2px);*/
+    height: 20px;
+    padding: 6px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.form-control-sm {
+    height: calc(1.8125rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem
+}
+
+.form-control-lg {
+    height: calc(2.875rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem
+}
+
+select.form-control[multiple], select.form-control[size] {
+    height: auto
+}
+
+textarea.form-control {
+    height: auto
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group button {
+    background-color: #878BB6;
+}
+
+.form-text {
+    display: block;
+    margin-top: .25rem
+}
+
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px
+}
+
+.form-row > .col, .form-row > [class*=col-] {
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -1.25rem
+}
+
+.form-check-input:disabled ~ .form-check-label {
+    color: #6c757d
+}
+
+.form-check-label {
+    margin-bottom: 0
+}
+
+.form-check-inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: .75rem
+}
+
+.form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: .3125rem;
+    margin-left: 0
+}

@@ -1,0 +1,90 @@
+.registerForm {
+    /*margin-left: 15px;*/
+    width: 96%;
+    height: 300px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.registerForm .registerLabel {
+    float: left;
+    width: 120px;
+    height: 251px;
+    background-color: #dddddd;
+    border-bottom: solid 1px #cccccc;
+}
+
+.registerForm .registerLabel ul {
+    margin-top: 4px;
+}
+
+.registerForm .registerLabel li {
+    padding: 10px;
+}
+
+.registerForm .registerInputArea {
+    float: left;
+    width: 640px;
+    /*height: 237px;*/
+}
+
+.registerForm .registerInputArea li {
+    width: 100%;
+    height: 29px;
+    padding-left: 8px;
+    padding-top: 6px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.registerForm .registerInputArea .registerId {
+    float: left;
+}
+
+.registerForm .registerInputArea .registerCheck {
+    float: left;
+    margin-left: 5px;
+}
+
+.registerForm .registerInputArea .registerExplanation {
+
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.registerForm .registerInputArea input {
+    width: 150px;
+    height: 18px;
+    border: solid 1px #cccccc;
+}
+
+.registerForm .registerInputArea .registerNick {
+    float: left;
+}
+
+.registerForm .registerInputArea .registerNickCheck {
+    float: left;
+    margin-left: 5px;
+}
+
+.registerForm .registerInputArea .hp {
+    width: 40px;
+    height: 18px;
+    border: solid 1px #cccccc;
+}
+
+.registerForm .registerInputArea .email1 {
+    width: 90px;
+    height: 18px;
+    border: solid 1px #cccccc;
+}
+
+.registerForm .registerMust {
+    clear: both;
+    padding-top: 15px;
+}
+
+.registerSubmitBtn {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}

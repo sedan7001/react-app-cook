@@ -1,0 +1,24 @@
+.footerWrapper {
+    width: 980px;
+    height: 87px;
+    position: relative;
+    margin: auto;
+    border-top: 3px solid #d3361b;
+    background: #555555;
+    /*background-image:url("../../../assets/img/footer_bg2.png");*/
+    /*background-repeat: no-repeat;*/
+}
+
+.copyright {
+    float: right;
+    margin-right: 50px;
+    color: #a1a1a1;
+}
+
+.footer {
+    /*width: 980px;*/
+    /*margin: auto;*/
+    /*height: 90px;*/
+    /*background-image:url("../../../assets/img/footer_bg2.png");*/
+    /*background-repeat: no-repeat;*/
+}

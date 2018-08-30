@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import Header from 'components/Header/Header';
-
+import Header from "../../components/organisms/Header";
 class HeaderContainer extends Component {
     render() {
         return (

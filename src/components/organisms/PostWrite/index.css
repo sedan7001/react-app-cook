@@ -1,0 +1,151 @@
+.write_form_title {
+    margin-top: 20px;
+    width: 99%;
+    height: 25px;
+    text-align: center;
+    padding-top: 7px;
+    border-top: solid 2px #aaaaaa;
+    background-color: #eeeeee;
+    border-bottom: solid 1px #cccccc;
+
+}
+
+.write_form {
+    width: 99%;
+    margin-top: 1px;
+    overflow: hidden;
+
+}
+
+.postWriteGroupArea {
+    float: left;
+    width: 130px;
+    /*height: 600px;*/
+    text-align: center;
+    text-align: center;
+    /*padding: 5px;*/
+}
+
+.postWriteMainArea {
+    float: left;
+    width: 670px;
+    /*padding-left: 8px;*/
+    /*margin-top: 2px;*/
+    overflow: hidden;
+    /*background-color: #aaaaaa;*/
+
+}
+
+.postWriteSubmitBtn {
+    width: 51px;
+    height: 25px;
+    background: #a1a1a1;
+    border-radius: 3px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.write_line {
+    width: 100%;
+    border-bottom: solid 1px #cccccc;
+}
+
+.postWriteLabel {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: #eeeeee;
+    height: 17px;
+    margin-top: 1px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.postWriteLabel:nth-child(3) {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 5px;
+    background-color: #eeeeee;
+    margin-top: 1px;
+    border-bottom: solid 1px #cccccc;
+    padding-top: 120px;
+    height: 126px;
+}
+
+.postWriteInput {
+    float: left;
+    width: 700px;
+    /*padding: 5px;*/
+    padding: 2px 0 2px 0;
+    height: 23px;
+    margin-top: 1px;
+
+    border-bottom: solid 1px #cccccc;
+    text-align: left;
+    background: #fff;
+    padding-left: 20px;
+
+}
+
+.postWriteInput:nth-child(3) {
+    float: left;
+    width: 100%;
+    text-align: left;
+    /*padding: 5px;*/
+    /*background-color: #eeeeee;*/
+    margin-top: 1px;
+    border-bottom: solid 1px #cccccc;
+    /*padding-top: 120px;*/
+    height: 247px;
+}
+
+.postWriteInput:nth-child(3) textarea {
+    width: 598px;
+    height: 230px;
+    border: solid 1px #cccccc;
+}
+
+.postWriteInput input {
+    width: 600px;
+    height: 17px;
+    border: solid 1px #cccccc;
+}
+
+.postWriteInput input[type=checkbox] {
+    margin-left: 180px;
+    width: 20px;
+}
+
+.write_row3 .postWriteInput textarea {
+    margin-top: 1px;
+    border: solid 1px #cccccc;
+}
+
+.write_row4 .postWriteInput input {
+    width: 500px;
+    height: 19px;
+    border: solid 1px #cccccc;
+}
+
+.write_row5 .postWriteInput input {
+    width: 500px;
+    height: 19px;
+    border: solid 1px #cccccc;
+}
+
+.write_row6 .postWriteInput input {
+    width: 500px;
+    height: 19px;
+    border: solid 1px #cccccc;
+}
+
+.write_button {
+    margin-top: 15px;
+    width: 97%;
+    text-align: right;
+}
+
+.delete_ok {
+    margin: 0 0 3px 140px;
+}

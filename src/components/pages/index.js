@@ -1,0 +1,6 @@
+export {defalut as Home} from './HomePage'
+export {defalut as About} from './AboutPage'
+export {defalut as Download} from './DownloadPage'
+export {defalut as Free} from './FreePage'
+export {defalut as Greet} from './GreetPage'
+export {defalut as Qna} from './QnaPage'
