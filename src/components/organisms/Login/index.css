@@ -29,63 +29,63 @@
     width: 450px;
     height: 150px;
     margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.loginLabel {
-    float: left;
-    width: 80px;
-    height: 50px;
-    text-align: right;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    color: gray;
+/*.loginLabel {*/
+    /*float: left;*/
+    /*width: 80px;*/
+    /*height: 50px;*/
+    /*text-align: right;*/
+    /*font-weight: bold;*/
+    /*letter-spacing: 0.1em;*/
+    /*color: gray;*/
 
-}
+/*}*/
 
-.loginInputWithLabel {
-    overflow: hidden;
-}
+/*.loginInputWithLabel {*/
+    /*overflow: hidden;*/
+/*}*/
 
-.loginMainArea .loginLabel ul {
-    margin-top: 7px;
-}
+/*.loginMainArea .loginLabel ul {*/
+    /*margin-top: 7px;*/
+/*}*/
 
-.loginMainArea .loginLabel li {
-    padding-bottom: 11px;
-}
+/*.loginMainArea .loginLabel li {*/
+    /*padding-bottom: 11px;*/
+/*}*/
 
-.loginMainArea .loginInput {
-    float: left;
-    height: 50px;
-    margin-left: 10px;
-}
+/*.loginMainArea .loginInput {*/
+    /*float: left;*/
+    /*height: 50px;*/
+    /*margin-left: 10px;*/
+/*}*/
 
-.loginMainArea .loginInput li {
-    padding-bottom: 7px;
-}
+/*.loginMainArea .loginInput li {*/
+    /*padding-bottom: 7px;*/
+/*}*/
 
-.loginMainArea .loginInput input.login_input {
-    width: 150px;
-    height: 18px;
-    border: solid 1px #cccccc;
-}
+/*.loginMainArea .loginInput input.login_input {*/
+    /*width: 150px;*/
+    /*height: 18px;*/
+    /*border: solid 1px #cccccc;*/
+/*}*/
 
-.loginMainArea .login_button {
-    float: left;
-    margin-left: 10px;
-}
+/*.loginMainArea .login_button {*/
+    /*float: left;*/
+    /*margin-left: 10px;*/
+/*}*/
 
-.loginMainArea .loginLine {
+.loginLine {
     width: 382px;
     height: 1px;
     margin-top: 20px;
     border-bottom: solid 1px #dddddd;
 }
 
-.loginMainArea .loginGotoJoin {
+.loginGotoJoin {
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 100px;
 }
 
 .loginGotoJoin span {

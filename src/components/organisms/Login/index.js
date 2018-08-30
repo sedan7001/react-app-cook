@@ -1,20 +1,24 @@
 import React from 'react'
 import './index.css'
-import Button from "../../atoms/Button";
 import loginKey from 'assets/img/login_key.gif'
 import styled from 'styled-components'
 import PageNameBar from "../../molecules/PageNameBar";
+// import { Redirect } from 'react-router-dom';
 
 const Wrapper = styled.div`
-width:809px;
+    width:809px;
+    overflow: hidden;
+    min-height: 475px;
 `;
+// const isLogin = false;
 
-const Login = () => {
+const Login = ({children}) => {
     return (
         <Wrapper>
+            {/*{isLogin && <Redirect to="/"/>}*/}
             <PageNameBar title={'로그인'}> </PageNameBar>
 
-            <form method="post" action="login.php">
+            <form name="login" method="post" action="login.php">
 
 
                 <div className="loginForm">
@@ -22,35 +26,10 @@ const Login = () => {
                     <div className="loginImageArea">
                         <img src={loginKey} alt="loginKey"/>
                     </div>
-                    <div className="loginMainArea">
-                        <div className="loginInputWithLabel">
-                            <div className="loginLabel">
-                                <ul>
-                                    <li>
-                                        아이디
-                                    </li>
-                                    <li>
-                                        비밀번호
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="loginInput">
-                                <ul>
-                                    <li><input type="text" name="className" className="login_input"/></li>
-                                    <li><input type="password" name="password" className="login_input"/></li>
-                                </ul>
-                            </div>
-                            <div className="login_button">
-                                <Button font-size="15px" width={"96px"} height={"54px"} theme={"dark"}>로그인</Button>
-                            </div>
-                        </div>
-                        <div className="clear"></div>
-                        <div className="loginLine"></div>
-                        <div className="loginGotoJoin">
-                            <span>▷아직 회원이 아니십니까?</span>
-                            <Button width={"84px"} height={"23px"} font-weight={"300"}>회원가입하기</Button>
 
-                        </div>
+                    <div className="loginMainArea">
+                        {children}
+
 
                     </div>
                 </div>

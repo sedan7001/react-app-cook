@@ -14,49 +14,6 @@ const Wrapper = styled.div`
     width:990px;
 `;
 
-
-// const products = [
-//         {
-//             id: 1,
-//             name: 'TV',
-//             'price': 1000
-//         },
-//         {
-//             id: 2,
-//             name: 'Mobile',
-//             'price': 500
-//         },
-//         {
-//             id: 3,
-//             name: 'Book',
-//             'price': 20
-//         },
-//     ];
-// const columns= [{
-//         dataField: 'id',
-//         text: 'Product ID'
-//     },
-//         {
-//             dataField: 'name',
-//             text: 'Product Name'
-//         }, {
-//         dataField: 'price',
-//         text: 'Product Price',
-//         sort: true
-//     }
-// ];
-// const columns = [{
-//     dataField: 'id',
-//     text: 'Product ID'
-// }, {
-//     dataField: 'name',
-//     text: 'Product Name'
-// }, {
-//     dataField: 'price',
-//     text: 'Product Price'
-// }];
-
-
 const surveyResultChartData = {
     labels: ["피자", "파스타", "리조또", "바게뜨"],
     datasets: [
@@ -107,7 +64,7 @@ const postCountChartData = {
     ],
 };
 
-var options = {
+const options = {
     scales: {
         yAxes: [{
             ticks: {

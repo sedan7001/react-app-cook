@@ -6,38 +6,22 @@ import {prop, ifProp} from 'styled-tools'
 
 
 const styles = css`
-  width: ${prop('width', '51px')};
-  height: ${prop('height', '25px')};
-  background-color: ${prop('background-color', '#a1a1a1')};
-
-
-  color: ${prop('color', '#fff')};
-  border-radius: 3px;
-  margin-right: 5px;
-  font-weight : ${prop('font-weight', '500')};
-  font-size: ${prop('font-size', '12px')};
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor:  pointer;
-
-  // white-space: nowrap;
-  // border: 0.0625em solid ;
-  // text-decoration: none;
-  // appearance: none;
-  // padding: 0 1em;
-  // box-sizing: border-box;
-  
-  transition: background-color 250ms ease-out, color 250ms ease-out, border-color 250ms ease-out;
-  &:focus {
-    outline: none
-  };
-  
-  
-    // width: 60px;
-    // height: 24px;
-    
+    width: ${prop('width', '51px')};
+    height: ${prop('height', '25px')};
+    background-color: ${prop('background-color', '#a1a1a1')};
+    color: ${prop('color', '#fff')};
+    border-radius: 3px;
+    margin-right: 5px;
+    font-weight : ${prop('fontWeight', '500')};
+    font-size: ${prop('font-size', '12px')};
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor:  pointer;
+    transition: background-color 250ms ease-out, color 250ms ease-out, border-color 250ms ease-out;
+    &:focus {
+      outline: none
+    };
     ${ifProp('blueBtn', css`
     width: ${prop('width', '99px')};
     height: ${prop('height', '50px')};
@@ -56,7 +40,6 @@ const styles = css`
         0 3px 0 0 rgba(110, 164, 219, .7),
         0 3px 0 1px rgba(0,0,0,.4),
         0 3px 3px 1px rgba(0,0,0,0.5);
-
     &:hover {background-color: #699DD1;};
     &:active {
         top: 9px;
@@ -65,35 +48,31 @@ const styles = css`
         0 0 0 1px rgba(0,0,0,0.4);
     };  
     `)}
-
 `;
 
 
-
 const StyledLink = styled(({
-                               disabled, transparent, reverse, palette, width, height, theme, ...props
-                           }) => <Link {...props} />)`${styles}`;
+                               onclick, disabled, transparent, reverse, palette, width, height, theme, ...props
+                           }) => <Link onClick={onclick} {...props} />)`${styles}`;
 
 
 const Anchor = styled.a`${styles}`;
 const StyledButton = styled.button`${styles}`;
 
-const Button = ({type, ...props}) => {
+const Button = ({onclick, type, ...props}) => {
     if (props.to) {
-        return <StyledLink {...props} />
+        return <StyledLink onClick={onclick} {...props} />
     } else if (props.href) {
-        return <Anchor {...props} />
+        return <Anchor onClick={onclick} {...props} />
     }
-    return <StyledButton {...props} type={type}/>
+    return <StyledButton onClick={onclick} {...props} type={type}/>
 };
 
 Button.propTypes = {
-    // width: PropTypes.number,
     disabled: PropTypes.bool,
     palette: PropTypes.string,
     transparent: PropTypes.bool,
     reverse: PropTypes.bool,
-    // height: PropTypes.number,
     type: PropTypes.string,
     to: PropTypes.string,
     href: PropTypes.string,
@@ -102,7 +81,6 @@ Button.propTypes = {
 Button.defaultProps = {
     type: 'button',
     theme: 'grey'
-
 };
 
 export default Button

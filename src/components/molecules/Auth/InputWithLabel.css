@@ -1,0 +1,48 @@
+.loginInputWithLabel {
+    overflow: hidden;
+}
+.loginLabel {
+    float: left;
+    margin-left: 50px;
+    width: 230px;
+    height: 25px;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: gray;
+}
+
+.loginLabel .labelText {
+    float: left;
+    margin-top: 4px;
+    margin-left: 15px;
+    padding-bottom: 11px;
+
+}
+
+.loginLabel li {
+    padding-bottom: 11px;
+}
+
+/*.loginInput {*/
+    /*!*float: left;*!*/
+    /*height: 50px;*/
+    /*margin-left: 10px;*/
+/*}*/
+
+/*.loginInput li {*/
+/*}*/
+
+.loginInput {
+    margin-bottom: 7px;
+    float: right;
+    margin-left: 10px;
+    width: 150px;
+    height: 18px;
+    border: solid 1px #cccccc;
+}
+
+.login_button {
+    float: left;
+    margin-left: 10px;
+}
