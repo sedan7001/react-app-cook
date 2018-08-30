@@ -1,12 +1,20 @@
 import ax from 'axios';
+// import api from 'services/api'
 
+import { apiUrl } from 'config';
 const axios = ax.create({
-    baseURL: 'http://sedan.ipdisk.co.kr/cook/api'
+    // baseURL: 'http://sedan.ipdisk.co.kr/cook/api'
+    baseURL: apiUrl
+
 });
 
 export const write = (pageName, content) => axios.get(`/${pageName}/posts`, {content});
 export const list = (page, pageName) => axios.get(`/${pageName}s?page=${page}`);
+// export const list = (page, pageName) => api.get(`/${pageName}s?page=${page}`);
+
 export const view = (num, pageName) => axios.get(`/${pageName}s/${num}`);
+// export const view = ({num, pageName}) => api.get('/abouts/6',  num );
+// export const view = ({id, password}) => api.post('/signin', { id, password });
 
 export const next = (url) => axios.get(url);
 export const like = (postId) => axios.post(`/api/posts/${postId}/likes`);

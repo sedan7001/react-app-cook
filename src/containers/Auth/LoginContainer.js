@@ -65,7 +65,7 @@ class LoginContainer extends Component {
             storage.set('loggedInfo', loggedInfo);
 
         } catch (e) {
-            console.log('a');
+            console.log(e);
             this.setError('잘못된 계정정보입니다.');
         }
     };

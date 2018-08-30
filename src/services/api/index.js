@@ -13,7 +13,10 @@ export const checkStatus = (response) => {
   throw error
 };
 
-export const parseJSON = response => response.json();
+export const parseJSON = response => {
+  console.log(response);
+  response.json();
+}
 
 export const parseSettings = ({
   method = 'get', data, locale, ...otherSettings
@@ -23,9 +26,10 @@ export const parseSettings = ({
     'Content-Type': 'application/x-www-form-urlencoded',
   };
   const settings = merge({
-    body: data ? JSON.stringify(data) : undefined,
-    method,
-    headers,
+    // body: data ? JSON.stringify(data) : undefined,
+      body: JSON.stringify(data),
+      method,
+      headers,
   }, otherSettings);
   return settings
 };
@@ -33,6 +37,7 @@ export const parseSettings = ({
 export const parseEndpoint = (endpoint, params) => {
   const url = endpoint.indexOf('http') === 0 ? endpoint : apiUrl + endpoint;
   const querystring = params ? `?${stringify(params)}` : '';
+  console.log(querystring);
   return `${url}${querystring}`
 };
 

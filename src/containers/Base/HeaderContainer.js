@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {LoginButton, UserThumbnail} from 'components/Base/Header';
+import {LoginButton, UserThumbnail} from 'components/molecules/Base/Header';
 import {connect} from 'react-redux';
 import * as userActions from 'store/modules/user';
 import * as baseActions from 'store/modules/base';

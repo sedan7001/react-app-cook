@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserMenu, { UserMenuItem, Username } from 'components/Base/UserMenu';
+import UserMenu, { UserMenuItem, Username } from 'components/molecules/Base/UserMenu';
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as baseActions from 'store/modules/base';
