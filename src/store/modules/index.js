@@ -1,17 +1,26 @@
-// 모든 모듈들을 불러와서 합치는 작업이 이뤄짐
+import { combineReducers } from 'redux';
+import base from './base';
+import auth from './auth';
+import user from './user';
+import home from './home';
+import posts from './posts';
+import postView from './postView';
+import userPage from './userPage';
+import surveyView from "./surveyView";
+import memoView from "./memoView";
 
-import {combineReducers} from 'redux';
-import counter, {counterSaga} from './counter';
-import post, {postSaga} from './post';
-import todo from './todo';
-import {all} from 'redux-saga/effects';
 
-export function* rootSaga() {
-    yield all([counterSaga(), postSaga()]);
-}
+import { penderReducer } from 'redux-pender';
 
 export default combineReducers({
-    counter,
-    todo,
-    post
+    base,
+    auth,
+    user,
+    home,
+    posts,
+    postView,
+    userPage,
+    surveyView,
+    memoView,
+    pender: penderReducer
 });

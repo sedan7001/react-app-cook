@@ -44,39 +44,26 @@ const horizontalBarOptions = {
 const AdminSurveyRegist = ({...props}) => {
     return (
         <Wrapper>
-
-
             <div className="adminSurveyRegistWrapper">
                 <PageNameBar title={'설문 등록'}> </PageNameBar>
-
-
                 <div className="adminSurveyRegistContainer">
-
                     <div className="surveyRegistInputWrapper">
                         <div className="chartTitle">
                             <span className="chartLabel">Insert Survey</span>
                         </div>
                         <form className="form-signin" method="POST" action="survey_insert.php" id="form">
-
-
                             <div className="form-group has-warning">
-
                                 <input type="text" className="form-control" name="sub1" placeholder="피자" required=""
                                        autoFocus=""/>
-
                             </div>
                             <div className="form-group has-success">
-
                                 <input id="inputWarning" type="text" className="form-control search-query" name="sub2"
                                        placeholder="파스타" required=""/>
                             </div>
                             <div className="form-group has-warning">
-
                                 <input type="text" className="form-control" name="sub3" placeholder="리조또" required=""/>
-
                             </div>
                             <div className="form-group has-success">
-
                                 <input type="text" className="form-control" name="sub4" placeholder="바게뜨" required=""/>
                             </div>
 

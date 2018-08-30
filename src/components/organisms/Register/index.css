@@ -72,8 +72,8 @@
     border: solid 1px #cccccc;
 }
 
-.registerForm .registerInputArea .email1 {
-    width: 90px;
+.registerForm .registerInputArea .email {
+    width: 150px;
     height: 18px;
     border: solid 1px #cccccc;
 }

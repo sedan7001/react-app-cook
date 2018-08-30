@@ -1,9 +1,75 @@
 import React from 'react';
 import './index.css';
-import {Link} from 'react-router-dom'
-import Button from "../../atoms/Button";
+import {NavLink, Link} from 'react-router-dom'
+import Button from "../../atoms/Button"
+import styled from 'styled-components'
+import {Wave} from 'better-react-spinkit'
 
-const PostList = ({match}) => {
+
+const PageButton = styled(NavLink)`
+margin: 5px;
+`;
+
+const LoadingWrapper = styled.div`
+    width: 100%;
+    margin-top: 170px;
+    display: inline-flex;
+    justify-content: center;
+`;
+const PostList = ({match, pageBtn, posts, ...props, loading}) => {
+    // console.log(match.url.split('/')[1])
+
+
+    if (loading) {
+        // 로딩중일때 로더 보여주기
+        return (
+            <div className="postListWrapper">
+
+                <LoadingWrapper>
+                    <Wave color="grey" size={100}/>
+                </LoadingWrapper>
+            </div>
+        )
+    }
+    if (!posts) return null;
+
+    const postList = posts.map(
+        (post) => (
+            <div key={post.get('num')} className="listItem">
+                <div className="listNumber">
+                    {post.get('num')}
+                </div>
+                <div className="listSubject">
+                    <Link to={`/${match.url.split('/')[1]}/post/${post.get('num')}`}>
+                        {post.get('subject')}
+                        {post.get('rippleCount') > 0 && ' [' + post.get('rippleCount') + ']'}
+
+                    </Link>
+                </div>
+                <div className="listName">
+                    {post.get('nick')}
+                </div>
+                <div className="listDay">
+                    {post.get('regist_day').substring(0, 10)}
+                </div>
+                <div className="listViewCount">
+                    {post.get('hit')}
+                </div>
+            </div>
+        )
+    );
+
+
+    const pageList = pageBtn.map(
+        (page, index) => (
+            <PageButton to={`/${match.url.split('/')[1]}/page/${page.get('rel')}`} key={index}
+                        activeClassName="activePageList">
+                {page.get('rel')}
+            </PageButton>
+        )
+    );
+
+
     return (
         <div className="postListWrapper">
             <form name="boardForm" method="post" action="list.php?table=cook_about&amp;mode=search">
@@ -48,103 +114,14 @@ const PostList = ({match}) => {
             </div>
 
             <div className="listContent">
-                <div className="listItem">
-                    <div className="listNumber">23</div>
-                    <div className="listSubject">
-
-                        <Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-                    </div>
-
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-07-19</div>
-                    <div className="listViewCount">0</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">22</div>
-                    <div className="listSubject">
-                        <Link to={`${match.url}/2`}>포스트#2테스트</Link>
-
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-07-19</div>
-                    <div className="listViewCount">0</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">21</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-07-11</div>
-                    <div className="listViewCount">3</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">20</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-07-11</div>
-                    <div className="listViewCount">0</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">19</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-07-03</div>
-                    <div className="listViewCount">5</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">18</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-06-27</div>
-                    <div className="listViewCount">0</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">17</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-06-27</div>
-                    <div className="listViewCount">0</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">16</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-06-27</div>
-                    <div className="listViewCount">0</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">15</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-06-27</div>
-                    <div className="listViewCount">0</div>
-                </div>
-                <div className="listItem">
-                    <div className="listNumber">14</div>
-                    <div className="listSubject"><Link to={`${match.url}/1`}>포스트#1테스트 [2] </Link>
-                    </div>
-                    <div className="listName">세단</div>
-                    <div className="listDay">2018-06-27</div>
-                    <div className="listViewCount">0</div>
-                </div>
-
+                {postList}
                 <div className="listPagination">
-                    <div className="listPageNumber"> ◀ 이전 &nbsp;&nbsp;&nbsp;&nbsp;
-                        <b> 1 </b><a> 2 </a><a
-                        > 3 </a>            &nbsp;&nbsp;&nbsp;&nbsp;다음
-                        ▶
+                    <div className="listPageNumber">
+                        ◀ 이전
+                        {pageList}
+                        다음 ▶
                     </div>
-                    <Button to={`${match.url}/write`} theme="dark" width='71px' height='26px'>글쓰기
-                    </Button>
+                    {/*<Button to={`${match.url}/write`} theme="dark" width='71px' height='26px'>글쓰기</Button>*/}
                 </div>
             </div>
             <div className="clear"></div>
