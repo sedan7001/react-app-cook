@@ -45,7 +45,7 @@ const MemoList = ({match, pageBtn, posts, loading}) => {
                                     {item.regist_day}}
                                 </li>
                                 <li className="memoRippleDelBtn">
-                                    <a href="">삭제</a>
+                                    {/*<a href="">삭제</a>*/}
                                 </li>
                             </ul>
                         </div>
@@ -72,7 +72,7 @@ const MemoList = ({match, pageBtn, posts, loading}) => {
                                 {item.get('regist_day')}
                             </li>
                             <li className="memoDelBtn">
-                                <a href="">[삭제]</a>
+                                {/*<a href="">[삭제]</a>*/}
                             </li>
                         </ul>
                     </div>
@@ -92,7 +92,7 @@ const MemoList = ({match, pageBtn, posts, loading}) => {
                                     <div className="rippleFormContent">
                                         <textarea rows="3" cols="80" name="ripple_content"></textarea>
                                     </div>
-                                    <div className="rippleSubmitBtn"><input type="image" src={memoRippleButton}
+                                    <div className="rippleSubmitBtn"><input disabled type="image" src={memoRippleButton}
                                                                             alt="input"/>
                                     </div>
                                 </form>
@@ -121,7 +121,7 @@ const MemoList = ({match, pageBtn, posts, loading}) => {
                 <form name="memo_form" method="post" action="insert.php">
                     <div className="memoWriteUser"><span> </span></div>
                     <div className="memoWriteTextArea"><textarea rows="6" cols="95" name="content"></textarea></div>
-                    <div className="memoWriteSubmitBtn"><input type="image" src={memoButton} alt="input"/></div>
+                    <div className="memoWriteSubmitBtn"><input disabled type="image" src={memoButton} alt="input"/></div>
                 </form>
             </div>
             <ul className="memoList">

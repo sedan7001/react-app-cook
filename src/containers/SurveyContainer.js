@@ -13,9 +13,9 @@ class SurveyContainer extends Component {
         if (this.state.loading) return; // 이미 요청중이라면 무시
 
         // 로딩 상태 시작
-        this.setState({
-            loading: true
-        });
+        // this.setState({
+        //     loading: true
+        // });
         const {SurveyActions} = this.props;
 
         // const postNum = this.props.match.params.num;
