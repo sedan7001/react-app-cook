@@ -88,7 +88,7 @@ const PostList = ({match, pageBtn, posts, ...props, loading}) => {
                         </select></div>
                     <div className="listSearchInput"><input type="text" name="search"/></div>
                     <div className="listSearchSubmit">
-                        <Button type="submit" theme="dark">검색</Button>
+                        <Button type="submit" disabled theme="dark">검색</Button>
                     </div>
                 </div>
             </form>

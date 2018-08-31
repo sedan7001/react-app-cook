@@ -1,5 +1,5 @@
-##react-cook
-이 프로젝트는 cook 의 프론트엔드 프로젝트로 리액트로 만들어 졌습니다. 
+##react-cook v0.4
+이 프로젝트는 cook 의 프론트엔드 프로젝트로 React.js로 만들어 졌습니다. 
  
 axios: 프로미스 기반 HTTP Client
 
