@@ -1,4 +1,4 @@
-##react-app-cook
+## react-app-cook
 
 ### 소개
 - cook v1을 기반으로 프론트엔드를 React로 마이그레이션
