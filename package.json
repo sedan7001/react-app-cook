@@ -43,7 +43,7 @@
     "react-bootstrap-table-next": "^0.1.15",
     "react-bootstrap-table2-paginator": "^0.1.6",
     "react-chartjs-2": "^2.7.4",
-    "react-dev-utils": "^5.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.1",
     "react-hot-loader": "^4.0.0",
     "react-onclickoutside": "^6.7.1",
